@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMD Hub | Usuarios</title>
+    <link rel="stylesheet" href="Sources/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="dash-brand" href="dashboard-teacher.html"
+        ><img src="Sources/Logo.svg" alt="" /><span>SMD·HUB</span></a
+      >
+      <nav>
+        <a href="inventory.html">▤ <b>Inventario</b></a
+        ><a class="active" href="users.html">♙ <b>Usuarios</b></a
+        ><a href="movements.html">◷ <b>Movimientos</b></a
+        ><a href="dispensers.html">⌁ <b>Dispensadores</b></a
+        ><a href="projects.html">▦ <b>Proyectos</b></a
+        ><a href="reports.html">◒ <b>Reportes</b></a
+        ><a href="settings.html">⚙ <b>Configuración</b></a>
+      </nav>
+      <a class="logout" href="index.html">↩ <b>Cerrar sesión</b></a>
+    </aside>
+    <main class="dashboard">
+      <header class="dash-header">
+        <div>
+          <span class="crumb">GESTIÓN / USUARIOS</span>
+          <h1>Usuarios</h1>
+          <p>Alumnos y profesores del laboratorio.</p>
+        </div>
+        <div class="user-menu">
+          <span class="avatar">MP</span
+          ><span
+            >Marina Pereyra<br /><small>Profesora · Electrónica</small></span
+          >
+        </div>
+      </header>
+      <section class="section-title">
+        <div>
+          <span class="crumb">48 ACTIVOS · 3 INACTIVOS</span>
+          <h2>Personas registradas</h2>
+        </div>
+        <a class="button button-primary" href="#">+ Nuevo usuario</a>
+      </section>
+      <div class="table">
+        <div class="table-head">
+          <span>Nombre</span><span>Email</span><span>Curso / rol</span
+          ><span>Estado</span>
+        </div>
+        <div class="table-row">
+          <span>Alex García</span><strong>alex.garcia@smdhub.edu.ar</strong
+          ><span>4° Electrónica<br /><small>Alumno</small></span
+          ><em class="success">Activo</em>
+        </div>
+        <div class="table-row">
+          <span>Lucía Romero</span><strong>lucia.romero@smdhub.edu.ar</strong
+          ><span>5° Electrónica<br /><small>Alumno</small></span
+          ><em class="success">Activo</em>
+        </div>
+        <div class="table-row">
+          <span>Marina Pereyra</span
+          ><strong>marina.pereyra@smdhub.edu.ar</strong
+          ><span>Electrónica<br /><small>Profesor</small></span
+          ><em class="success">Activo</em>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

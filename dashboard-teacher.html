@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMD Hub | Panel de control</title>
+    <link rel="stylesheet" href="Sources/dashboard.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="dash-brand" href="index.html"
+        ><img src="Sources/Logo.svg" alt="" /><span>SMD·HUB</span></a
+      >
+      <nav>
+        <a class="active" href="dashboard-teacher.html">⌂ <b>Resumen</b></a
+        ><a href="inventory.html">▤ <b>Inventario</b></a
+        ><a href="users.html">♙ <b>Usuarios</b></a
+        ><a href="movements.html">◷ <b>Movimientos</b></a
+        ><a href="dispensers.html">⌁ <b>Dispensadores</b></a
+        ><a href="projects.html">▦ <b>Proyectos</b></a
+        ><a href="reports.html">◒ <b>Reportes</b></a
+        ><a href="settings.html">⚙ <b>Configuración</b></a>
+      </nav>
+      <a class="logout" href="index.html">↩ <b>Cerrar sesión</b></a>
+    </aside>
+    <main class="dashboard teacher">
+      <header class="dash-header">
+        <div>
+          <span class="crumb">SMD HUB / PANEL DE CONTROL</span>
+          <h1>Resumen del laboratorio</h1>
+          <p>Todo lo que sucede, en un solo lugar.</p>
+        </div>
+        <div class="user-menu">
+          <span class="notification alert">♢</span><span class="avatar">MP</span
+          ><span
+            >Marina Pereyra<br /><small>Profesora · Electrónica</small></span
+          >
+        </div>
+      </header>
+      <section class="stat-grid">
+        <article>
+          <span>USUARIOS ACTIVOS</span><strong>48</strong
+          ><small>+6 este mes</small>
+        </article>
+        <article>
+          <span>COMPONENTES</span><strong>126</strong
+          ><small>Catálogo actualizado</small>
+        </article>
+        <article>
+          <span>RETIROS HOY</span><strong>24</strong
+          ><small>8 proyectos · 16 individuales</small>
+        </article>
+        <article class="critical">
+          <span>STOCK CRÍTICO</span><strong>07</strong
+          ><small>Requieren atención</small>
+        </article>
+      </section>
+      <section class="system-panel">
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <div>
+            <span class="crumb">ESTADO DEL SISTEMA</span>
+            <h2>SMD Hub operativo</h2>
+            <p>
+              Controlador principal conectado · Última sincronización hace 2
+              min.
+            </p>
+          </div>
+          <strong>4 / 4 módulos</strong>
+        </div>
+        <div class="module-row">
+          <div>
+            <span>MÓDULO 01</span><b>Disponible</b><i class="status-dot"></i>
+          </div>
+          <div>
+            <span>MÓDULO 02</span><b>Disponible</b><i class="status-dot"></i>
+          </div>
+          <div>
+            <span>MÓDULO 03</span><b>En mantenimiento</b
+            ><i class="status-dot warn"></i>
+          </div>
+          <div><span>TEMP. CONTROLADOR</span><b>28.4 °C</b></div>
+        </div>
+      </section>
+      <section class="teacher-grid">
+        <div class="recent">
+          <div class="section-title">
+            <div>
+              <span class="crumb">ACTIVIDAD GLOBAL</span>
+              <h2>Últimos movimientos</h2>
+            </div>
+            <a href="movements.html">Ver todos ↗</a>
+          </div>
+          <div class="table">
+            <div class="table-head">
+              <span>Usuario</span><span>Operación</span><span>Hora</span
+              ><span>Estado</span>
+            </div>
+            <div class="table-row">
+              <span>Alex García</span><strong>Resistencia 1 kΩ × 10</strong
+              ><span>14:32</span><em class="success">Completado</em>
+            </div>
+            <div class="table-row">
+              <span>Lucía Romero</span><strong>Proyecto Fuente × 8</strong
+              ><span>14:18</span><em class="warning">Parcial</em>
+            </div>
+          </div>
+        </div>
+        <div class="alert-panel">
+          <div class="section-title">
+            <div>
+              <span class="crumb">ATENCIÓN</span>
+              <h2>Alertas</h2>
+            </div>
+          </div>
+          <div class="alert-item">
+            <span>!</span>
+            <div>
+              <strong>Módulo 03 fuera de servicio</strong>
+              <p>Error de dispensado · hace 18 min</p>
+            </div>
+          </div>
+          <div class="alert-item">
+            <span>!</span>
+            <div>
+              <strong>7 componentes en stock crítico</strong>
+              <p>Revisar inventario recomendado</p>
+            </div>
+          </div>
+          <a href="inventory.html">Gestionar alertas ↗</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

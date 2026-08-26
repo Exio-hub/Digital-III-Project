@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMD Hub | Dashboard alumno</title>
+    <link rel="stylesheet" href="Sources/dashboard.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="dash-brand" href="index.html"
+        ><img src="Sources/Logo.svg" alt="" /><span>SMD·HUB</span></a
+      >
+      <nav>
+        <a class="active" href="dashboard-student.html">⌂ <b>Inicio</b></a>
+        <a href="components.html">⌁ <b>Retirar componentes</b></a>
+        <a href="projects.html">▦ <b>Proyectos</b></a>
+        <a href="history.html">◷ <b>Historial</b></a>
+        <a href="profile.html">◉ <b>Mi perfil</b></a>
+      </nav>
+      <a class="logout" href="index.html">↩ <b>Cerrar sesión</b></a>
+    </aside>
+    <main class="dashboard">
+      <header class="dash-header">
+        <div>
+          <span class="crumb">SMD HUB / ALUMNO</span>
+          <h1>Buenos días, Alex</h1>
+          <p>¿Qué necesitás retirar hoy?</p>
+        </div>
+        <div class="user-menu">
+          <span class="notification">♢</span><span class="avatar">AG</span
+          ><span>Alex García<br /><small>Alumno · 4° Electrónica</small></span>
+        </div>
+      </header>
+      <section class="dash-actions">
+        <article class="action-card teal-card">
+          <span class="action-icon">⌁</span>
+          <h2>Retirar componentes</h2>
+          <p>Buscá un componente y seleccioná la cantidad que necesitás.</p>
+          <a href="components.html">Explorar componentes <b>↗</b></a>
+        </article>
+        <article class="action-card dark-card">
+          <span class="action-icon">▦</span>
+          <h2>Retirar un proyecto</h2>
+          <p>Obtené los componentes necesarios para tus proyectos.</p>
+          <a href="projects.html">Ver proyectos <b>↗</b></a>
+        </article>
+      </section>
+      <section class="recent">
+        <div class="section-title">
+          <div>
+            <span class="crumb">ACTIVIDAD</span>
+            <h2>Retiros recientes</h2>
+          </div>
+          <a href="history.html">Ver historial completo ↗</a>
+        </div>
+        <div class="table">
+          <div class="table-head">
+            <span>Fecha</span><span>Componente / proyecto</span
+            ><span>Cantidad</span><span>Estado</span>
+          </div>
+          <div class="table-row">
+            <span>22 AGO · 14:32</span><strong>Resistencia 1 kΩ</strong
+            ><span>10 unidades</span><em class="success">Completado</em>
+          </div>
+          <div class="table-row">
+            <span>22 AGO · 12:15</span><strong>Proyecto Fuente</strong
+            ><span>8 componentes</span><em class="warning">Parcial</em>
+          </div>
+        </div>
+      </section>
+      <section class="mini-stat">
+        <span class="stat-symbol">↗</span>
+        <div>
+          <span class="crumb">ESTE MES</span><strong>12</strong>
+          <p>retiros realizados</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

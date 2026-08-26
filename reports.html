@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMD Hub | Reportes</title>
+    <link rel="stylesheet" href="Sources/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="dash-brand" href="dashboard-teacher.html"
+        ><img src="Sources/Logo.svg" alt="" /><span>SMD·HUB</span></a
+      >
+      <nav>
+        <a href="inventory.html">▤ <b>Inventario</b></a
+        ><a href="users.html">♙ <b>Usuarios</b></a
+        ><a href="movements.html">◷ <b>Movimientos</b></a
+        ><a href="dispensers.html">⌁ <b>Dispensadores</b></a
+        ><a href="projects.html">▦ <b>Proyectos</b></a
+        ><a class="active" href="reports.html">◒ <b>Reportes</b></a
+        ><a href="settings.html">⚙ <b>Configuración</b></a>
+      </nav>
+      <a class="logout" href="index.html">↩ <b>Cerrar sesión</b></a>
+    </aside>
+    <main class="dashboard">
+      <header class="dash-header">
+        <div>
+          <span class="crumb">ANÁLISIS / REPORTES</span>
+          <h1>Reportes</h1>
+          <p>Una lectura clara del uso del laboratorio.</p>
+        </div>
+        <div class="user-menu">
+          <span class="avatar">MP</span
+          ><span
+            >Marina Pereyra<br /><small>Profesora · Electrónica</small></span
+          >
+        </div>
+      </header>
+      <section class="stat-grid">
+        <article>
+          <span>RETIROS ESTE MES</span><strong>384</strong
+          ><small>+18% vs. mes anterior</small>
+        </article>
+        <article>
+          <span>PROYECTO MÁS SOLICITADO</span><strong>Fuente</strong
+          ><small>42 solicitudes</small>
+        </article>
+        <article>
+          <span>COMPONENTE MÁS USADO</span><strong>1 kΩ</strong
+          ><small>1.240 unidades</small>
+        </article>
+        <article>
+          <span>DISPONIBILIDAD</span><strong>96%</strong
+          ><small>Operación normal</small>
+        </article>
+      </section>
+      <section class="system-panel">
+        <div class="system-status">
+          <div>
+            <span class="crumb">CONSUMO MENSUAL</span>
+            <h2>Actividad del laboratorio</h2>
+            <p>Agosto 2026 · visualización preparada para gráfico.</p>
+          </div>
+        </div>
+        <div class="module-row">
+          <div><span>SEMANA 01</span><b>82 retiros</b></div>
+          <div><span>SEMANA 02</span><b>96 retiros</b></div>
+          <div><span>SEMANA 03</span><b>104 retiros</b></div>
+          <div><span>SEMANA 04</span><b>102 retiros</b></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

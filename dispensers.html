@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMD Hub | Dispensadores</title>
+    <link rel="stylesheet" href="Sources/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="dash-brand" href="dashboard-teacher.html"
+        ><img src="Sources/Logo.svg" alt="" /><span>SMD·HUB</span></a
+      >
+      <nav>
+        <a href="inventory.html">▤ <b>Inventario</b></a
+        ><a href="users.html">♙ <b>Usuarios</b></a
+        ><a href="movements.html">◷ <b>Movimientos</b></a
+        ><a class="active" href="dispensers.html">⌁ <b>Dispensadores</b></a
+        ><a href="projects.html">▦ <b>Proyectos</b></a
+        ><a href="reports.html">◒ <b>Reportes</b></a
+        ><a href="settings.html">⚙ <b>Configuración</b></a>
+      </nav>
+      <a class="logout" href="index.html">↩ <b>Cerrar sesión</b></a>
+    </aside>
+    <main class="dashboard">
+      <header class="dash-header">
+        <div>
+          <span class="crumb">HARDWARE / DISPENSADORES</span>
+          <h1>Dispensadores</h1>
+          <p>Estado del controlador y módulos conectados.</p>
+        </div>
+        <div class="user-menu">
+          <span class="avatar">MP</span
+          ><span
+            >Marina Pereyra<br /><small>Profesora · Electrónica</small></span
+          >
+        </div>
+      </header>
+      <section class="system-panel">
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <div>
+            <span class="crumb">CONTROLADOR PRINCIPAL</span>
+            <h2>Conectado y operativo</h2>
+            <p>ESP32 · última conexión hace 2 min.</p>
+          </div>
+          <strong>4 / 4 módulos</strong>
+        </div>
+        <div class="module-row">
+          <div>
+            <span>MÓDULO 01</span><b>Disponible</b><i class="status-dot"></i>
+          </div>
+          <div>
+            <span>MÓDULO 02</span><b>Disponible</b><i class="status-dot"></i>
+          </div>
+          <div>
+            <span>MÓDULO 03</span><b>Fuera de servicio</b
+            ><i class="status-dot warn"></i>
+          </div>
+          <div><span>TEMP. CONTROLADOR</span><b>28.4 °C</b></div>
+        </div>
+      </section>
+      <section class="stat-grid">
+        <article>
+          <span>LATENCIA</span><strong>42 ms</strong
+          ><small>Conexión estable</small>
+        </article>
+        <article>
+          <span>DISPENSADOS HOY</span><strong>24</strong
+          ><small>+12% vs. ayer</small>
+        </article>
+        <article>
+          <span>ÚLTIMA SINCRONIZACIÓN</span><strong>14:34</strong
+          ><small>Actualización automática</small>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
