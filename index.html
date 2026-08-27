@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Portada pública: presenta SMD Hub y concentra los accesos de autenticación. -->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -17,12 +18,16 @@
     <link rel="stylesheet" href="Sources/styles.css" />
   </head>
   <body>
+    <!-- Encabezado de la portada y accesos principales. -->
     <header class="site-header">
+      <!-- Enlace de marca: vuelve al inicio sin recargar la aplicación. -->
       <a class="brand" href="#top" aria-label="SMD Hub, inicio"
-        ><img src="Sources/Logo.svg" alt="" /><span
+        ><!-- Imagen del logotipo visual; el texto aporta accesibilidad y marca. -->
+        <img src="Sources/Logo.svg" alt="" /><span
           >SMD<span>·</span>HUB</span
         ></a
       >
+      <!-- Nav agrupa los enlaces de las secciones públicas. -->
       <nav class="main-nav" aria-label="Navegación principal">
         <a href="#about">Nosotros</a><a href="#technology">Tecnología</a
         ><a href="#workflow">Cómo funciona</a>
@@ -35,17 +40,24 @@
       </div>
     </header>
 
+    <!-- Main contiene todo el contenido único de la portada. -->
     <main id="top">
+      <!-- Hero: resume el propósito y el flujo general del sistema. -->
+      <!-- Section separa bloques semánticos y facilita la navegación interna. -->
       <section class="hero section-grid">
+        <!-- Div agrupa contenido relacionado para controlarlo con CSS. -->
         <div class="hero-copy reveal">
+          <!-- Párrafo breve de contexto visual antes del título. -->
           <p class="eyebrow">
             <span class="pulse-dot"></span> Laboratorio conectado · Córdoba, AR
           </p>
+          <!-- H1 es el título principal; debe existir uno por página. -->
           <h1>La electrónica<br /><em>se mueve.</em></h1>
           <p class="hero-lead">
             SMD Hub transforma la manera en que los laboratorios educativos
             encuentran, gestionan y dispensan componentes electrónicos.
           </p>
+          <!-- Grupo de acciones: conecta el visitante con el registro. -->
           <div class="hero-actions">
             <a class="button button-primary" href="#register"
               >Comenzar ahora <span aria-hidden="true">↗</span></a
@@ -54,6 +66,7 @@
             >
           </div>
         </div>
+        <!-- Diagrama visual: representa el flujo, sin lógica de dispensado. -->
         <div
           class="hero-system reveal reveal-delay"
           aria-label="Visualización del sistema SMD Hub"
@@ -61,7 +74,9 @@
           <div class="system-orbit orbit-one"></div>
           <div class="system-orbit orbit-two"></div>
           <div class="hub-core"><span>SMD</span><strong>HUB</strong></div>
+          <!-- Nodo de interfaz: muestra una etapa del circuito de información. -->
           <div class="system-node node-user">
+            <!-- Span contiene el símbolo; small y b forman la jerarquía del nodo. -->
             <span class="node-icon">◌</span><small>USUARIO</small
             ><b>Solicitud</b>
           </div>
@@ -78,12 +93,14 @@
           </p>
         </div>
       </section>
+      <!-- Indicadores breves de la propuesta tecnológica. -->
       <section class="metrics-strip">
         <div><strong>01</strong><span>Plataforma web</span></div>
         <div><strong>02</strong><span>Control automático</span></div>
         <div><strong>∞</strong><span>Posibilidades para aprender</span></div>
         <p>Diseñado para que el laboratorio<br />trabaje a tu ritmo.</p>
       </section>
+      <!-- Sección institucional editable para reemplazar el texto provisional. -->
       <section class="intro section-grid" id="about">
         <div class="section-label">
           <span>01</span><span>Quiénes somos</span>
@@ -103,6 +120,7 @@
           </div>
         </div>
       </section>
+      <!-- Tecnologías principales, listas para enlazar con documentación. -->
       <section class="technology section-grid dark-section" id="technology">
         <div class="section-label light-label">
           <span>02</span><span>La tecnología</span>
@@ -137,6 +155,7 @@
           </div>
         </div>
       </section>
+      <!-- Flujo conceptual separado de la futura lógica JavaScript. -->
       <section class="workflow section-grid" id="workflow">
         <div class="section-label">
           <span>03</span><span>Cómo funciona</span>
@@ -169,6 +188,7 @@
         >
       </section>
     </main>
+    <!-- Pie editable: contactos, ubicación y enlaces institucionales. -->
     <footer class="site-footer site-footer-dark">
       <div>
         <strong>SMD<span>·</span>HUB</strong>
@@ -189,6 +209,7 @@
         </p>
       </div>
     </footer>
+    <!-- Modal de login; el backend futuro validará credenciales y roles. -->
     <div
       class="modal-layer"
       id="login"
@@ -202,6 +223,8 @@
         <p class="eyebrow">SMD · HUB / ACCESO</p>
         <h2 id="login-title">Volver al laboratorio.</h2>
         <p class="modal-copy">Tu acceso determina el espacio disponible.</p>
+        <!-- Destino provisional: luego se reemplazará por JS/API. -->
+        <!-- Formulario HTML provisional: JS/SQL podrá validar y guardar estos datos. -->
         <form action="dashboard-student.html">
           <label
             >Email<input
@@ -219,6 +242,7 @@
         </form>
         <div class="teacher-access">
           <span>¿Sos profesor?</span>
+          <!-- Formulario docente independiente para mantener permisos separados. -->
           <form action="dashboard-teacher.html">
             <label
               >Clave docente<input
@@ -236,6 +260,7 @@
         >
       </div>
     </div>
+    <!-- Modal de registro: sus datos podrán persistirse en SQL más adelante. -->
     <div
       class="modal-layer"
       id="register"

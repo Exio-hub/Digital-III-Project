@@ -1,4 +1,4 @@
-/* Final overrides: the compact sidebar must never expose a broken text logo. */
+/* Overrides tempranos: protegen el layout antes de cargar las reglas base. */
 @media (max-width: 1050px) {
   .dashboard {
     padding-left: 32px !important;
@@ -79,6 +79,7 @@
     min-width: 620px !important;
   }
 }
+/* Marca compacta: el texto se oculta y el logo mantiene una caja estable. */
 .sidebar .dash-brand {
   font-size: 0 !important;
   overflow: hidden;
@@ -105,6 +106,7 @@
 .sidebar a {
   text-decoration: none;
 }
+/* Estilos compartidos por la página alternativa de registro. */
 .register-page {
   background: var(--deep);
   min-height: 100vh;
@@ -326,6 +328,7 @@ Compact navigation stays logo-only until hover; dashboard content remains fluid.
     overflow-wrap: anywhere;
   }
 }
+/* Tokens del dashboard: reutilizan la identidad visual de la portada. */
 :root {
   --ink: #264653;
   --deep: #153640;
@@ -337,9 +340,11 @@ Compact navigation stays logo-only until hover; dashboard content remains fluid.
   --muted: #6d8187;
   --white: #fff;
 }
+/* Box sizing uniforme para tablas, tarjetas y navegación. */
 * {
   box-sizing: border-box;
 }
+/* Fondo operativo claro para distinguir el dashboard de la portada. */
 body {
   background: #eef5f5;
   color: var(--ink);
@@ -347,6 +352,7 @@ body {
 Sans", sans-serif;
   margin: 0;
 }
+/* Sidebar compacto: al hacer hover revela las etiquetas del rol actual. */
 .sidebar {
   background: var(--deep);
   bottom: 0;
@@ -383,6 +389,7 @@ Grotesk";
 .dash-brand span {
   color: var(--teal);
 }
+/* Menú por rol: cada HTML define sus propias opciones permitidas. */
 .sidebar nav {
   display: flex;
   flex-direction: column;
@@ -419,11 +426,13 @@ Grotesk";
 .logout {
   margin-top: auto;
 }
+/* Lienzo principal: reserva el espacio permanente del sidebar fijo. */
 .dashboard {
   margin-left: 78px;
   max-width: 1450px;
   padding: 48px 6vw 70px;
 }
+/* Encabezado operativo con contexto de página y usuario. */
 .dash-header {
   align-items: flex-start;
   display: flex;
@@ -476,6 +485,7 @@ Grotesk";
 .notification.alert {
   color: var(--orange);
 }
+/* Acciones destacadas del alumno o accesos rápidos del profesor. */
 .dash-actions {
   display: grid;
   gap: 20px;
@@ -540,6 +550,7 @@ Grotesk";
   font-size: 12px;
   font-weight: 700;
 }
+/* Tabla compartida: en móvil conserva columnas y permite desplazamiento. */
 .table {
   background: var(--white);
   border: 1px solid var(--line);
@@ -613,6 +624,7 @@ Grotesk";
   font-size: 11px;
   margin: 3px 0 0;
 }
+/* Indicadores numéricos del panel docente. */
 .stat-grid {
   display: grid;
   gap: 15px;
@@ -647,6 +659,7 @@ Grotesk";
 .stat-grid .critical small {
   color: var(--orange);
 }
+/* Estado técnico: información exclusiva del profesor. */
 .system-panel {
   background: var(--ink);
   color: white;
@@ -711,6 +724,7 @@ Grotesk";
   margin-top: -17px;
   margin-left: auto;
 }
+/* Composición docente: actividad global junto a alertas. */
 .teacher-grid {
   display: grid;
   gap: 28px;
@@ -754,6 +768,7 @@ Grotesk";
   font-size: 11px;
   font-weight: 700;
 }
+/* Móvil: reduce el sidebar y apila las tarjetas operativas. */
 @media (max-width: 850px) {
   .sidebar {
     width: 62px;
